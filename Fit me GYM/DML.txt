@@ -1,0 +1,85 @@
+#inserting into Equipment table
+Insert INTO Equipment VALUES(1010,'Cardiovascular');
+Insert INTO Equipment VALUES(1011,'The treadmill ');
+Insert INTO Equipment VALUES(1012,'Rowing machine');
+Insert INTO Equipment VALUES(1013,'Elliptical machine');
+Insert INTO Equipment VALUES(1014,'Upright bike');
+Insert INTO Equipment VALUES(1015,'Stair mill');
+Insert INTO Equipment VALUES(1016,'Exercise Bikes');
+Insert INTO Equipment VALUES(1017,'Training bench');
+Insert INTO Equipment VALUES(1018,'Barbell Set');
+Insert INTO Equipment VALUES(1019,'Rowing machine');
+
+#inserting into Staff table
+Insert INTO Staff VALUES(2000,'Sahil Parksh','G-11,Islamabad');
+Insert INTO Staff VALUES(2001,'Abid Hussain','G-11,Islamabad');
+Insert INTO Staff VALUES(2002,'Aqeel Afzal','I-9,Islamabad');
+Insert INTO Staff VALUES(2003,'Saqib Riaz','Bahria Town, Karachi');
+Insert INTO Staff VALUES(2004,'Asif Mahmood','AnarKali ,Lahore');
+Insert INTO Staff VALUES(2005,'Ahmed Ali','G-13, Islamabad');
+Insert INTO Staff VALUES(2006,'Khalid Hussain','E-11, Islamabad');
+Insert INTO Staff VALUES(2007,'Aftab Afzal','F-9, Islamabad');
+Insert INTO Staff VALUES(2008,'Saqib Hussain','Bahria Town, Lahore');
+Insert INTO Staff VALUES(2009,'Amjad Mahmood','G-10, Islamabad');
+
+#inserting into Intake_Logs table
+Insert INTO Intake_Logs VALUES(1501,51,7.8,'1 lb');
+Insert INTO Intake_Logs VALUES(1502,67,8.5,'1 lb');
+Insert INTO Intake_Logs VALUES(1503,78,9.2,'2 lb');
+Insert INTO Intake_Logs VALUES(1504,61,8.2,'1 lb');
+Insert INTO Intake_Logs VALUES(1505,88,12.8,'2 lb');
+Insert INTO Intake_Logs VALUES(1506,90,7.4,'3 lb');
+Insert INTO Intake_Logs VALUES(1507,80,4.5,'2 lb');
+Insert INTO Intake_Logs VALUES(1508,100,8.2,'2 lb');
+Insert INTO Intake_Logs VALUES(1509,56,7.2,'5 lb');
+Insert INTO Intake_Logs VALUES(1510,76,8.8,'1 lb');
+
+#inserting into Workout_Plan table
+Insert INTO Workout_Plan VALUES('Aerobic exercise for 5 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3210,1010,1500,2000,'Lose 500 g, Gain .002 BMI_Rate, MUSCLE GAIN .005 lb','Lose 3 kg, Gain .02 BMI_Rate, MUSCLE GAIN .05 lb','Lose 9 kg, Gain .2 BMI_Rate, MUSCLE GAIN .5 lb','Aerobic exercises',20);
+Insert INTO Workout_Plan VALUES('Strength training for 4 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3211,1011,2000,2001,'Lose 600 g, Gain .002 BMI_Rate, MUSCLE GAIN .007 lb','Lose 2 kg, Gain .02 BMI_Rate, MUSCLE GAIN .07 lb','Lose 6 kg, Gain .2 BMI_Rate, MUSCLE GAIN .7 lb','Strength training',10);
+Insert INTO Workout_Plan VALUES('Stretching for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3212,1012,1000,2002,'Lose 300 g, Gain .002 BMI_Rate, MUSCLE GAIN .008 lb','Lose 1.5 kg, Gain .02 BMI_Rate, MUSCLE GAIN .08 lb','Lose 5 kg, Gain .2 BMI_Rate, MUSCLE GAIN .8 lb','Stretching',30);
+Insert INTO Workout_Plan VALUES('Squats for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3213,1013,1500,2003,'Lose 500 g, Gain .002 BMI_Rate, MUSCLE GAIN .003 lb','Lose 2.4 kg, Gain .02 BMI_Rate, MUSCLE GAIN .03 lb','Lose 10 kg, Gain .2 BMI_Rate, MUSCLE GAIN .3 lb','Squats',15);
+Insert INTO Workout_Plan VALUES('Balance exercises for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3214,1014,2000,2004,'Lose 300 g, Gain .002 BMI_Rate, MUSCLE GAIN .005 lb','Lose 1.5 kg, Gain .02 BMI_Rate, MUSCLE GAIN .05 lb','Lose 7 kg, Gain .2 BMI_Rate, MUSCLE GAIN .5 lb','Balance exercises',25);
+Insert INTO Workout_Plan VALUES('Push-ups for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3215,1015,1000,2005,'Lose 400 g, Gain .002 BMI_Rate, MUSCLE GAIN .007 lb','Lose 2 kg, Gain .02 BMI_Rate, MUSCLE GAIN .07 lb','Lose 8 kg, Gain .2 BMI_Rate, MUSCLE GAIN .7 lb','Push-ups',15);
+Insert INTO Workout_Plan VALUES('Stretching for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3216,1016,2000,2006,'Lose 400 g, Gain .002 BMI_Rate, MUSCLE GAIN .008 lb','Lose 2.5 kg, Gain .02 BMI_Rate, MUSCLE GAIN .08 lb','Lose 10 kg, Gain .2 BMI_Rate, MUSCLE GAIN .8 lb','Stretching',12);
+Insert INTO Workout_Plan VALUES('Strength training for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3217,1017,1000,2007,'Lose 200 g, Gain .002 BMI_Rate, MUSCLE GAIN .003 lb','Lose 1.5 kg, Gain .03 BMI_Rate, MUSCLE GAIN .03 lb','Lose 7 kg, Gain .3 BMI_Rate, MUSCLE GAIN .3 lb','Strength training',40);
+Insert INTO Workout_Plan VALUES('Abdominal Crunches for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3218,1018,1500,2008,'Lose 350 g, Gain .003 BMI_Rate, MUSCLE GAIN .005 lb','Lose 3 kg, Gain .03 BMI_Rate, MUSCLE GAIN .05 lb','Lose 9 kg, Gain .3 BMI_Rate, MUSCLE GAIN .5 lb','Abdominal Crunches',30);
+Insert INTO Workout_Plan VALUES('Balance exercises for 2 weeks. Daily average intake to meet the nutrient requirements is (97%-98%).',3219,1019,2000,2009,'Lose 500 g, Gain .002 BMI_Rate, MUSCLE GAIN .007 lb','Lose 2.5 kg, Gain .02 BMI_Rate, MUSCLE GAIN .07 lb','Lose 10 kg, Gain .2 BMI_Rate, MUSCLE GAIN .7 lb','Balance exercises',20);
+
+#inserting into VALUES table
+Insert INTO Member VALUES('M','ALI KHAN',1501,7111,67,03456454427,22);
+Insert INTO Member VALUES('M','Abid Hussain',1502,7112,44,03456456427,21);
+Insert INTO Member VALUES('M','Nasir Mahmood',1503,7113,88,03456454927,22);
+Insert INTO Member VALUES('M','Ahmad KHAN',1504,7114,71,03456454227,45);
+Insert INTO Member VALUES('M','Sahil Parkash',1505,7115,91,03456554427,77);
+Insert INTO Member VALUES('F','Fariya KHAN',1506,7116,60,03452464427,50);
+Insert INTO Member VALUES('M','Hussain Khan',1507,7117,40,03246756427,30);
+Insert INTO Member VALUES('M','Zubair Kiyani',1508,7118,58,03578454927,32);
+Insert INTO Member VALUES('F','Fiza Ahmed',1509,7119,65,03456487656,41);
+Insert INTO Member VALUES('M','Ramzan Mubarak',1510,7120,68,03456109747,49);
+
+#inserting into FIT_ME_Gym table
+Insert INTO FIT_ME_Gym VALUES(1301,7111,3210,500,'E-8,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1302,7112,3211,500,'I-10,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1303,7113,3212,500,'F-8,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1304,7114,3213,500,'F-11,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1305,7115,3214,500,'G-9,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1306,7116,3215,500,'H-11,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1307,7117,3216,500,'G-10,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1308,7118,3217,500,'D-8,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1309,7119,3218,500,'G-11,Islamabad');
+Insert INTO FIT_ME_Gym VALUES(1310,7120,3219,500,'G-10,Islamabad');
+
+#inserting into Personalized_Plan table
+Insert INTO Personalized_Plan VALUES(1234,7111,18,'M',4.8,59,'Back Exercise','DAY1-Back / BICEPS, DAY2-FULL BODY, DAY3-REST, DAY4-CHEST, DAY5-REST,DAY6-LEGS,DAY7-REST','Drinking water');
+Insert INTO Personalized_Plan VALUES(4521,7112,24,'F',5.2,54,'Shouders Exercise','DAY1-SHOULDERS / TRICEPS, DAY2-QUADS / GLUTES, DAY3-REST, DAY4-BACK / BICEPS, DAY5-REST,DAY6-HAMSTRINGS, GLUTES / CALVES,DAY7-REST','Taking Nutrients');
+Insert INTO Personalized_Plan VALUES(1238,7113,30,'M',6.2,58,'Chest Exrecise','DAY1-Back / BICEPS, DAY2- CHEST / CORE, DAY3-REST, DAY4-QUADS / GLUTES, DAY5-SHOULDERS / TRICEPS,DAY6- REST,DAY7-HAMSTRINGS / CALVES','Take Proteins');
+Insert INTO Personalized_Plan VALUES(1245,7114,39,'M',5.7,65,'Arms Exercise ','DAY1-CHEST / BICEPS, DAY2-QUADS / CALVES, DAY3-SHOULDERS / CORE, DAY4- BACK / TRICEPS, DAY5-HAMSTRINGS / GLUTES,DAY6- REST,DAY7- FULL BODY','Take Carbohydates');
+Insert INTO Personalized_Plan VALUES(1250,7115,29,'F',6.0,56,'CALVES','DAY1-CHEST / SHOULDERS, DAY2- QUADS / GLUTES, DAY3-BACK, DAY4-ARMS / SHOULDERS, DAY5-HAMSTRINGS / CALVES,DAY6- REST,DAY7- GLUTES','Take Minerals');
+Insert INTO Personalized_Plan VALUES(1286,7116,45,'M',7.0,80,'HAMSTRINGS','DAY1-GLUTES, DAY2-Back / BICEPS, DAY3- QUADS / GLUTES, DAY4-REST, DAY5-HAMSTRINGS,DAY6- REST,DAY7-FULL BODY','Take Nutrients');
+Insert INTO Personalized_Plan VALUES(1369,7117,56,'F',6.5,65,'BICEPS','DAY1- QUADS / GLUTES, DAY2-REST, DAY3-GLUTES, DAY4-REST, DAY5-Back / BICEPS,DAY6- REST,DAY7-RUNNING','Drinking water and Proteins');
+Insert INTO Personalized_Plan VALUES(1489,7118,63,'M',5.6,70,'RUNNING','DAY1-SITUPS, DAY2-ROPE SKIPPING, DAY3-REST, DAY4-YOGA, DAY5-REST,DAY6-SITUPS,DAY7-RESISTANCE BAND','Take Carbohydrates');
+Insert INTO Personalized_Plan VALUES(2056,7119,47,'F',4.3,62,'AQUA JOGGING','DAY1-AQUA JOGGING, DAY2-ARM CURLS, DAY3-WALIKING, DAY4-REST, DAY5-LEG LIFT,DAY6- REST,DAY7-LEG PRESS','Take Minerals');
+Insert INTO Personalized_Plan VALUES(2578,7120,77,'M',4.9,80,'AQUA JOGGING','DAY1-AQUA JOGGING, DAY2-ARM CURLS, DAY3-WALIKING, DAY4-REST, DAY5-LEG LIFT,DAY6- REST,DAY7-LEG PRESS','Eat food with max Calories');
+
+

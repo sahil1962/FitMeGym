@@ -1,0 +1,94 @@
+#table for Equipments
+Create table Equipment (
+	Equip_ID NUMBER(20),
+	Name VARCHAR(20) Not NULL,
+	Primary key (Equip_ID)
+);
+
+#table for Staff 
+Create table Staff (
+	Staff_ID NUMBER(10),
+	Name VARCHAR(20) Not NULL,
+	Address VARCHAR(20),
+	Primary Key(Staff_ID)
+);
+
+#table for Intake_Logs
+Create table Intake_Logs(
+	log_id NUMBER(20),
+	Weight NUMBER(10),
+ 	BMI_rate FLOAT(10),
+	Muscle_gian VARCHAR(20),
+	Primary Key(log_id)
+);
+
+#table for Custom_Plan 
+Create table Custom_Plan (
+	Description VARCHAR(100),
+ 	Plan_ID NUMBER(10) Not NULL,
+	Mem_ID NUMBER(10) Not NULL,
+	daily_target VARCHAR(100),
+        Weekly_target VARCHAR(100),
+        Monthly_target VARCHAR(100),
+	Type VARCHAR(20),
+	Nutritional_Quantity NUMBER(10),
+	Primary Key(plan_ID),
+	FOREIGN KEY (mem_id) REFERENCES member(mem_id) 
+);
+
+#table for Workout_Plan 
+Create table Workout_Plan (
+	Description VARCHAR(100),
+ 	Plan_ID NUMBER(10),
+        Equip_ID NUMBER(20),
+	Plan_fee NUMBER(10),
+	Staff_ID NUMBER(10),
+	daily_target VARCHAR(100),
+	Weekly_target VARCHAR(100),
+        Monthly_target VARCHAR(100),
+	Type VARCHAR(20),
+	Nutritional_Quantity NUMBER(10),
+	Primary Key(plan_ID),
+	FOREIGN KEY (Staff_ID) REFERENCES Staff(Staff_ID),
+	FOREIGN KEY (Equip_ID) REFERENCES Equipment (Equip_ID)
+);
+
+#table for Member 
+Create table Member (
+	Gender VARCHAR(2),
+	Name VARCHAR(20),
+	log_id NUMBER(20),
+	Mem_ID NUMBER(10),
+	Weight NUMBER(10),
+	Contact_No NUMBER(20),
+	Age NUMBER(20),
+	Primary key (Mem_ID),
+	FOREIGN KEY (log_id) REFERENCES Intake_Logs(log_id) 
+);
+
+#table for FIT_ME_Gym 
+Create table FIT_ME_Gym (
+	Code NUMBER(10) ,
+	Mem_ID NUMBER(10),
+	Plan_ID NUMBER(10),
+	Regis_fee NUMBER(10),
+	Address VARCHAR(20) Not NULL,
+	Primary Key (Code),
+        FOREIGN KEY (Plan_ID) REFERENCES Workout_Plan (Plan_ID),
+	FOREIGN KEY (Mem_ID) REFERENCES Member(Mem_ID)
+);
+
+#table for Personalized_Plan
+Create table Personalized_Plan(
+        plan_id NUMBER(10),
+	Mem_ID NUMBER(10) Not NULL,
+	age NUMBER(5),
+	Gender VARCHAR(2),
+	Height NUMBER(5),
+	Weight NUMBER(5),
+	Daliy VARCHAR(150),
+	Weekly VARCHAR(150),
+	Monthly VARCHAR(150),
+	Primary Key (plan_id),
+	FOREIGN KEY (mem_id) REFERENCES member(mem_id) 
+);
